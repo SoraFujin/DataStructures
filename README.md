@@ -3,6 +3,10 @@ Implementing all the data structures I have Learned so far
 DataStructures:
 
 LinkedList:
+- Singly LinkedList
+- Doubly LinkedList
+
+LinkedList:
     - singly LinkedList
     - doubly LinkedList
 
