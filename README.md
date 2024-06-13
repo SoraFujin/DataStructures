@@ -1,6 +1,6 @@
-Implementing all the data structures I have Learned so far
+# Implementing all the data structures I have Learned so far
 
-DataStructures:
+# DataStructures:
 
 LinkedList:
 - Singly LinkedList
