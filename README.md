@@ -3,7 +3,6 @@ Implementing all the data structures I have Learned so far
 DataStructures:
 
 LinkedList:
-    -singly LinkedList
     - singly LinkedList
     - doubly LinkedList
 
