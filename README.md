@@ -1,6 +1,6 @@
 <h3>Implementing all the data structures I have Learned so far</h3>
 
-DataStructures:
+<h2>DataStructures:</h2>
 
 LinkedList:
 - Singly LinkedList
