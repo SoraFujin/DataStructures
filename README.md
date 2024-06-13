@@ -1,7 +1,6 @@
----
- Implementing all the data structures I have Learned so far
+<h3>Implementing all the data structures I have Learned so far</h3>
 
-# DataStructures:
+DataStructures:
 
 LinkedList:
 - Singly LinkedList
@@ -35,4 +34,4 @@ The main objective of this project is to be able to understand and implement any
 
 This project will be repeated in different langauges, such as, c, and python
 
-# Note: the Makefile here is a sh script I created to make it easy to run the Main class for java.
+ Note: the Makefile here is a sh script I created to make it easy to run the Main class for java.
