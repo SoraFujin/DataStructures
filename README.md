@@ -6,31 +6,27 @@ LinkedList:
 - Singly LinkedList
 - Doubly LinkedList
 
-LinkedList:
-    - singly LinkedList
-    - doubly LinkedList
-
 Trees:
-    - BST (Biary Search Tree)
-    - AVL
+- BST (Biary Search Tree)
+- AVL
 
 Stack:
-    - Stack using a LinkedList
-    - Stack using a Tree
+- Stack using a LinkedList
+- Stack using a Tree
 
 Queue:
-    - Queue using an array
-    - Queue using a LinkedList
-    - Queue using a Tree
-    - Queue using a Stack
+- Queue using an array
+- Queue using a LinkedList
+- Queue using a Tree
+- Queue using a Stack
 
 Priority Queue:
-    - using a LinkedList
-    - using a Stack
+- using a LinkedList
+- using a Stack
 
 HashMap:
-    - HashMap using an array
-    - HashMap using a LinkedList
+- HashMap using an array
+- HashMap using a LinkedList
 
 The main programming language that will be used here is java,
 
