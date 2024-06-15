@@ -12,7 +12,7 @@ Trees:
 
 Stack:
 - Stack using a LinkedList
-- Stack using a Tree
+- Stack using an Array
 
 Queue:
 - Queue using an array
