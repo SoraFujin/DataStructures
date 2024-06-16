@@ -1,7 +1,15 @@
 package com.dataStructures.main;
 
+import com.dataStructures.LinkedLists.SinglyLinkedList;
+
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello, Java!");
+		linkedLists();
+	}
+
+	public static void linkedLists() {
+		SinglyLinkedList<Integer> sL = new SinglyLinkedList<>();
+		sL.addAtHead(10);
+		sL.addAtHead(7);
 	}
 }
