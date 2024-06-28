@@ -1,4 +1,4 @@
-package com.dataStructers.LinkedLists;
+package com.dataStructures.LinkedLists;
 
 public class SinglyLinkedList<T extends Comparable<T>> {
 	private SLNode<T> head;
@@ -7,7 +7,7 @@ public class SinglyLinkedList<T extends Comparable<T>> {
 		SLNode<T> node = new SLNode<>(data);
 		if (head == null) {
 			head = node;
-			node.getNext();
+			node.setNext(head);
 		} else {
 			node.setNext(head);
 			SLNode<T> current = head;
@@ -20,22 +20,32 @@ public class SinglyLinkedList<T extends Comparable<T>> {
 	}
 
 	public void addSorted(T data) {
-		SLNode<T> node = new SLNode<>(data);
-		if (head == null) {
-			head = node;
-			head.setNext(head);
-		}
+		SLNode<T> newNode = new SLNode<T>(data);
 		SLNode<T> current = head;
-		while (current.getNext() != head) {
-			if (current.getData().compareTo(data) > 0) {
-				current.setNext(node);
-			} else {
-				node.setNext(current);
-			}
-		}
 	}
-	// traverse
-	// reverse
-	// search
-	// delete
+
+	public void reverse() {}
+
+	public T delete(T data) {
+		return null;
+	}
+
+	public T search(T data) {
+		return null;
+	}
+
+	public void traverse() {
+		if (head == null) {
+			System.out.println("List is empty");
+			return;
+		}
+
+		SLNode<T> current = head;
+		do {
+			System.out.print(current.getData() + " ");
+			current = current.getNext();
+		} while (current != head);
+		System.out.println();
+	}
 }
+

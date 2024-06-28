@@ -1,4 +1,4 @@
-package com.dataStructers.LinkedLists;
+package com.dataStructures.LinkedLists;
 
 public class SLNode<T extends Comparable<T>> {
 	private SLNode<T> next;
