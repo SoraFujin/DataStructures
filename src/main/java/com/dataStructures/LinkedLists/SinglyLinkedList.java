@@ -21,8 +21,22 @@ public class SinglyLinkedList<T extends Comparable<T>> {
 
 	public void addSorted(T data) {
 		SLNode<T> newNode = new SLNode<T>(data);
-		SLNode<T> current = head;
+		if (head == null) {
+			head = newNode;
+			newNode.setNext(head);
+		} else {
+			SLNode<T> current = head;
+			SLNode<T> prev = null;
+
+			do {
+				prev = current;
+				head.setNext(prev);
+
+			} while (data.compareTo(current.getData()) > 0 && current != head);
+		}
 	}
+
+	public void sort() {}
 
 	public void reverse() {}
 
