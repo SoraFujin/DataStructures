@@ -1,4 +1,4 @@
-package com.dataStructures.LinkedLists;
+ package com.dataStructures.LinkedLists;
 
 public class SinglyLinkedList<T extends Comparable<T>> {
 	private SLNode<T> head;
@@ -46,91 +46,11 @@ public class SinglyLinkedList<T extends Comparable<T>> {
 		}
 	}
 
-	public SLNode<T> getMiddle(SLNode<T> head) {
-		if (head == null) {
-			return head;
-		}
-
-		SLNode<T> fast = head;
-		SLNode<T> slow = head;
-
-		while (fast.getNext() != head && fast.getNext().getNext() != head) {
-			fast = fast.getNext().getNext();
-			slow = slow.getNext();
-		}
-
-		return slow;
-	}
-
-	public SLNode<T> merge(SLNode<T> a, SLNode<T> b) {
-		SLNode<T> newList = null;
-		SLNode<T> tail = null;
-
-		while (a != null && b != null) {
-			SLNode<T> nextNode = null;
-
-			if (a.getData().compareTo(b.getData()) < 0) {
-				nextNode = a;
-				a = a.getNext();
-			} else {
-				nextNode = b;
-				b = b.getNext();
-			}
-
-			if (tail != null && tail != head) {
-				tail.setNext(nextNode);
-			} else {
-				newList = nextNode;
-				tail = nextNode;
-			}
-
-			if (a != null) {
-				tail.setNext(a);
-			} else {
-				tail.setNext(b);
-			}
-		}
-
-		return newList;
-	}
-
-	public SLNode<T> mergeSort(SLNode<T> head) {
-		if (head == null || head.getNext() == head) {
-			return head;
-		}
-
-		SLNode<T> middle = getMiddle(head);
-
-		SLNode<T> leftList = head;
-		SLNode<T> rightList = middle.getNext();
-
-		middle.setNext(null);
-
-		leftList = mergeSort(leftList);
-		rightList = mergeSort(rightList);
-
-		return merge(leftList, rightList);
-	}
-
-	public void sort() {
-		if (head == null || head.getNext() == head) {
-			return;
-		}
-		head = mergeSort(head);
-
-		SLNode<T> current = head;
-		while (current.getNext() != head) {
-			current = current.getNext();
-		}
-		current.setNext(head);
-	}
-
-
 	public void reverse() {
 
-		if (head == null) {
+		if (head == null) 
 			System.out.println("List is empty");
-		}
+		
 		SLNode<T> last = head;
 		SLNode<T> prev = head;
 		SLNode<T> current = head.getNext();
@@ -146,22 +66,45 @@ public class SinglyLinkedList<T extends Comparable<T>> {
 		head = prev;
 
 	}
+	public SLNode<T> delete(T data) {
+		if (head == null) 
+				return null;
 
-	public T delete(T data) {
 		SLNode<T> current = head;
 		SLNode<T> prev = null;
 
-		if (head == null) {
-			return null;
+		while (!data.equals(current.getData())) {
+			if (current.getNext() == head) {
+				System.out.println("Data not in the list");
+				break;
+			}
+			prev = current;
+			current = current.getNext();
 		}
 
-		if (head.getData().equals(data) && head.getNext() == null)
+		if (current == head && current.getNext() == head) {
 			head = null;
+			return head;
+		}
 
+
+		if (current == head) {
+			prev = head;
+			while (prev.getNext() != head)
+				prev = prev.getNext();
+			
+			head = current.getNext();
+			prev.setNext(head);
+		}
+
+			else if (current.getNext() == head) 
+				prev.setNext(head);
+			else 
+				prev.setNext(current.getNext());
+		
 		return null;
 
 	}
-
 	public T search(T data) {
 		if (head == null) {
 			return null;
