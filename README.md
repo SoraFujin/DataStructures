@@ -6,7 +6,7 @@
 - Singly LinkedList
  ## Methods:
  1. add -> keeps adding the data at the head of the linked list.
- 2. addSorted -> inserts the data sorted .
+ 2. addSorted -> inserts the data sorted.
  3. reverse -> reverse the nodes in the list.
  4. search -> checks if the data is inside the list.
  5. delete -> deletes a specific data in the list.
@@ -16,7 +16,7 @@
 - BST (Biary Search Tree)
 - AVL
 
-Stack:
+### Stack:
 - Stack using a LinkedList
 - Stack using an Array
 
