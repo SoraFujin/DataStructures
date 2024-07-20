@@ -2,9 +2,9 @@
 
 <h2>DataStructures:</h2>
 
-LinkedList:
+### LinkedList:
 - Singly LinkedList
- ### Methods:
+ ## Methods:
  1. add -> keeps adding the data at the head of the linked list.
  2. addSorted -> inserts the data sorted .
  3. reverse -> reverse the nodes in the list.
@@ -12,7 +12,7 @@ LinkedList:
  5. delete -> deletes a specific data in the list.
 - Doubly LinkedList
 
-Trees:
+### Trees:
 - BST (Biary Search Tree)
 - AVL
 
@@ -20,17 +20,17 @@ Stack:
 - Stack using a LinkedList
 - Stack using an Array
 
-Queue:
+### Queue:
 - Queue using an array
 - Queue using a LinkedList
 - Queue using a Tree
 - Queue using a Stack
 
-Priority Queue:
+### Priority Queue:
 - using a LinkedList
 - using a Stack
 
-HashMap:
+### HashMap:
 - HashMap using an array
 - HashMap using a LinkedList
 
