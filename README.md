@@ -1,51 +1,41 @@
-#DataStructures
-<h3>Implementing all the data structures I have Learned so far</h3>
 
-<h2>DataStructures:</h2>
+DataStructures
+Overview
+This project aims to implement various data structures in Java. The main objective is to understand and efficiently implement any kind of data structure. Future additions will include more data structures as they are learned. The project will also be replicated in other programming languages such as C and Python.
 
-### LinkedList:
-- Singly LinkedList
- #### Methods:
- 1. add -> keeps adding the data at the head of the linked list.
- 2. addSorted -> inserts the data sorted.
- 3. reverse -> reverse the nodes in the list.
- 4. search -> checks if the data is inside the list.
- 5. delete -> deletes a specific data in the list.
- 6. traverse -> prints the data inside the list.
+LinkedList
+Singly LinkedList
+Methods:
 
-- Doubly LinkedList
- #### Methods:
- 1. addAthead -> inserts data to the head.
- 2. addAtTail -> inserts the data to the end of the list.
- 3. delete -> deletets the data from the list.
- 4. addSorted -> inserts the data sorted.
+add - Adds data at the head of the linked list.
+addSorted - Inserts data in a sorted manner.
+reverse - Reverses the nodes in the list.
+search - Checks if the data exists in the list.
+delete - Deletes specific data from the list.
+traverse - Prints the data in the list.
+Doubly LinkedList
+Methods:
 
-### Trees:
-- BST (Biary Search Tree)
-- AVL
-
-### Stack:
-- Stack using a LinkedList
-- Stack using an Array
-
-### Queue:
-- Queue using an array
-- Queue using a LinkedList
-- Queue using a Tree
-- Queue using a Stack
-
-### Priority Queue:
-- using a LinkedList
-- using a Stack
-
-### HashMap:
-- HashMap using an array
-- HashMap using a LinkedList
-
-The main programming language that will be used here is java,
-
-The main objective of this project is to be able to understand and implement any kind of DataStructures, Later on will be adding more DataStructures I learn along the way
-
-This project will be repeated in different langauges, such as, c, and python
-
-Note: the Makefile here is a sh script I created to make it easy to run the class for java.
+addAtHead - Inserts data at the head.
+addAtTail - Inserts data at the end of the list.
+delete - Deletes data from the list.
+addSorted - Inserts data in a sorted manner.
+Trees
+Binary Search Tree (BST)
+AVL Tree
+Stack
+Stack using a LinkedList
+Stack using an Array
+Queue
+Queue using an Array
+Queue using a LinkedList
+Queue using a Tree
+Queue using a Stack
+Priority Queue
+Priority Queue using a LinkedList
+Priority Queue using a Stack
+HashMap
+HashMap using an Array
+HashMap using a LinkedList
+Notes
+The main programming language used here is Java. This project is designed to provide a thorough understanding of data structures and their implementations. A shell script Makefile is provided to simplify running the Java classes.
