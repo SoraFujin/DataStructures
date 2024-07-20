@@ -1,3 +1,4 @@
+#DataStructures
 <h3>Implementing all the data structures I have Learned so far</h3>
 
 <h2>DataStructures:</h2>
@@ -10,7 +11,14 @@
  3. reverse -> reverse the nodes in the list.
  4. search -> checks if the data is inside the list.
  5. delete -> deletes a specific data in the list.
+ 6. traverse -> prints the data inside the list.
+
 - Doubly LinkedList
+ #### Methods:
+ 1. addAthead -> inserts data to the head.
+ 2. addAtTail -> inserts the data to the end of the list.
+ 3. delete -> deletets the data from the list.
+ 4. addSorted -> inserts the data sorted.
 
 ### Trees:
 - BST (Biary Search Tree)
