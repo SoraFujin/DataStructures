@@ -1,4 +1,6 @@
 # Data Structures
+=======
+<h3>Implementing all the data structures I have Learned so far</h3>
 
 ## Overview
 This project aims to implement various data structures in Java. The main objective is to understand and efficiently implement any kind of data structure. Future additions will include more data structures as they are learned. The project will also be replicated in other programming languages such as C and Python.

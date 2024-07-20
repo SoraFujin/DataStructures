@@ -33,6 +33,10 @@ public class DLNode<T extends Comparable<T>> {
 		return prev;
 	}
 
+	public String toString() {
+		return "data: " + data;
+	}
+
 }
 
 
