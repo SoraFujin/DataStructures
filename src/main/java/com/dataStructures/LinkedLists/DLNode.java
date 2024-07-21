@@ -1,6 +1,5 @@
 package com.dataStructures.LinkedLists;
 
-
 public class DLNode<T extends Comparable<T>> {
 	private T data;
 	private DLNode<T> next, prev;

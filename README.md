@@ -22,6 +22,9 @@ This project aims to implement various data structures in Java. The main objecti
 2. **addAtTail** - Inserts data at the end of the list.
 3. **delete** - Deletes data from the list.
 4. **addSorted** - Inserts data in a sorted manner.
+5. **reverse** - Reverses the nodes in the list.
+6. **search** - Checks if the data exists in the list.
+7. **traverse** - Prints the data in the list.
 
 ## Trees
 
