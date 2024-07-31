@@ -2,15 +2,31 @@ package com.dataStructures.main;
 
 import com.dataStructures.LinkedLists.DoublyLinkedList;
 import com.dataStructures.LinkedLists.SinglyLinkedList;
-import com.dataStructures.List.List;
+import com.dataStructures.Trees.BST;
 
 public class Main {
 	public static void main(String[] args) {
+		System.out.println("##################################");
 		System.out.println("Circular singly linked list: ");
 		singlyLinkedList();
+
 		System.out.println("##################################");
 		System.out.println("Doubly Linked list: ");
 		DoublyLinkedList();
+
+		System.out.println("##################################");
+		System.out.println("BST: ");
+		BST();
+
+		System.out.println("##################################");
+		System.out.println("AVL: ");
+		AVL();
+
+		System.out.println("##################################");
+		System.out.println("List: ");
+		List();
+
+
 	}
 
 	public static void singlyLinkedList() {
@@ -110,7 +126,44 @@ public class Main {
 		list.traverse();
 	}
 
-	public static void list() {
-		List<Integer> list = new List<>();
+	public static void BST(){
+		BST<Integer> bst = new BST<>();
+		bst.insert(7);
+		bst.insert(8);
+		bst.insert(4);
+		bst.insert(3);
+		bst.insert(1);
+		bst.insert(10);
+		bst.traverse();
+
+		System.out.println("Tree Height: " + bst.height());
+
+		System.out.println("Tree Leaves: " + bst.countLeaves());
+
+		System.out.println("Is the tree Full?: " + bst.isFull());
+
+		System.out.println("Is the tree complete?: " + bst.isComplete());
+
+		System.out.println("-----------------------");
+		System.out.println("Search Method:");
+		System.out.println(bst.search(7));
+		System.out.println(bst.search(10));
+		System.out.println(bst.search(123));
+
+		System.out.println("-----------------------");
+		System.out.println("Delete Method:");
+		bst.delete(7);
+		bst.delete(1);
+		bst.delete(10);
+		bst.traverse();
+
+		bst.insert(7);
+		bst.insert(1);
+		bst.insert(10);
+	}
+
+	public static void AVL(){}
+
+	public static void List() {
 	}
 }
