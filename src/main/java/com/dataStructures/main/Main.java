@@ -2,6 +2,8 @@ package com.dataStructures.main;
 
 import com.dataStructures.LinkedLists.DoublyLinkedList;
 import com.dataStructures.LinkedLists.SinglyLinkedList;
+import com.dataStructures.List.List;
+import com.dataStructures.Trees.AVL;
 import com.dataStructures.Trees.BST;
 
 public class Main {
@@ -162,8 +164,68 @@ public class Main {
 		bst.insert(10);
 	}
 
-	public static void AVL(){}
+	public static void AVL(){
+  AVL<Integer> avl = new AVL<>();
+    
+    avl.insert(7);
+    avl.insert(8);
+    avl.insert(4);
+    avl.insert(3);
+    avl.insert(1);
+    avl.insert(10);
+    
+    System.out.println("AVL Tree Traversal:");
+    avl.traverse();
+    
+    System.out.println("-----------------------");
+    
+    System.out.println("Search Method:");
+    System.out.println(avl.search(7)); 
+    System.out.println(avl.search(10)); 
+    System.out.println(avl.search(123)); 
+    
+    System.out.println("-----------------------");
+    
+    System.out.println("Delete Method:");
+    avl.delete(7);
+    avl.delete(1);
+    avl.delete(10);
+    
+    avl.traverse();
+    
+    avl.insert(7);
+    avl.insert(1);
+    avl.insert(10);
+    
+    System.out.println("AVL Tree Traversal after reinsertion:");
+    avl.traverse();
+	}
 
 	public static void List() {
+		List<Integer> list = new List<>(10);
+		list.add(10);
+		list.add(20);
+		list.add(40);
+		list.add(60);
+		list.add(50);
+		list.add(70);
+		list.add(30);
+		list.add(90);
+		list.add(80);
+		list.add(100);
+
+		list.traverse();
+
+		System.out.println("List size: " + list.size());
+		
+		System.out.println("-----------------------");
+		System.out.println("Search Method:");
+		System.out.println(list.search(90));
+
+		System.out.println("-----------------------");
+		System.out.println("Delete Method:");
+		list.delete(10);
+		list.traverse();	
+
 	}
 }

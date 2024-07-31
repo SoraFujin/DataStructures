@@ -2,11 +2,15 @@ package com.dataStructures.List;
 
 public interface ListInterface <T extends Comparable<T>> {
 
-	void add();
+	void add(T data);
 
-	T search();
+	int search(T data);
 
-	T delete();
+	void delete(T data);
 
 	void traverse();
+
+	void set(T data, int index);
+
+	int size();
 }
