@@ -1,9 +1,19 @@
 # Data Structures
-=======
+---
+
 <h3>Implementing all the data structures I have Learned so far</h3>
 
 ## Overview
 This project aims to implement various data structures in Java. The main objective is to understand and efficiently implement any kind of data structure. Future additions will include more data structures as they are learned. The project will also be replicated in other programming languages such as C and Python.
+
+## List
+**Methods:**
+Constructor is used to get the size of the array used in the list
+1. **add** - Inserts the data at the end of the array.
+2. **set** - Sets the data at the specified index.
+3. **search** - Checks if the data is in the list.
+4. **delete** - Deletes the data from the list.
+5. **traverse** - Prints the data in the list.
 
 ## LinkedList
 
@@ -29,8 +39,30 @@ This project aims to implement various data structures in Java. The main objecti
 ## Trees
 
 ### Binary Search Tree (BST)
+**Methods:**
+1. **insert** - Adds data to the tree and compares it with the parent child to then insert right or left,
+2. **search** - Checks if the data exists in the tree.
+3. **delete** - Deletes the data from the tree.
+4. **countLeaves** - Prints the number of leaves in the tree.
+5. **height** - Prints the height of the tree.
+6. **isFull** - Checks if the tree is full or not.
+7. **isComplete** - Checks if the tree is complete or not.
+8. **traversre** - Prints the data in the tree in order.
 
 ### AVL Tree
+**Methods:**
+1. **rotateRight** - Performs a right rotation to balance the subtree.
+2. **rotateLeft** - Performs a left rotation to balance the subtree.
+3. **rotateRightToLeft** - Performs a right-to-left rotation to balance the left-right case.
+4. **rotateLeftToRight** - Performs a left-to-right rotation to balance the right-left case.
+5. **calculateHeight** - Computes the height of the subtree rooted at the given node.
+6. **getHeightDifference** - Calculates the balance factor of the given node.
+7. **rebalance** - Rebalances the subtree rooted at the given node if necessary.
+8. **insert** - Inserts new data into the AVL tree and rebalances.
+9. **search** - Searches for the node with the specified data in the AVL tree.
+10. **delete** - Deletes the node with the specified data and rebalances the tree.
+11. **getMinValueNode** - Finds the node with the minimum value in the subtree.
+12. **traverse** - Prints the data in the AVL tree in order.
 
 ## Stack
 - **Stack using a LinkedList**
